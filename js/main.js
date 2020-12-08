@@ -7,9 +7,17 @@ const scrollFunction = () => {
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
    
    Nav.classList.add("bg-white");
-   Nav.classList.add("text-dark");
+   Nav.classList.add("navbar-light");
+   Nav.classList.remove('navbar-dark')
+   Nav.classList.remove('bg-dark')
   
   }else{
     Nav.classList.remove("bg-white")
+    Nav.classList.remove("navbar-light");
+    Nav.classList.add('navbar-dark')
+    Nav.classList.add('bg-dark')
   }
 }
+
+
+// navbar-dark bg-dark
